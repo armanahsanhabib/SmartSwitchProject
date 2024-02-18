@@ -28,47 +28,6 @@ init({
 const App = () => {
   const [apiData, setApiData] = useState({});
   const [newClient, setNewClient] = useState();
-  // State for camera permission and camera object
-  // const [hasPermission, setHasPermission] = useState(null);
-  // const [cameraRef, setCameraRef] = useState(null);
-
-  // Check camera permission on component mount
-  // useEffect(() => {
-  //   (async () => {
-  //     const { status } = await Camera.requestCameraPermissionsAsync();
-  //     setHasPermission(status === "granted");
-  //   })();
-  // }, []);
-
-  // Render camera component if permission is granted
-  // const renderCamera = () => {
-  //   if (hasPermission === null) {
-  //     return <View />;
-  //   }
-  //   if (hasPermission === false) {
-  //     return (
-  //       <View>
-  //         <MaterialCommunityIcons
-  //           name="camera-off-outline"
-  //           color="#fff"
-  //           size={40}
-  //           style={{ textAlign: "center" }}
-  //         />
-  //         <Text style={{ color: "#fff", fontSize: 20 }}>
-  //           Video is not connected!
-  //         </Text>
-  //         ;
-  //       </View>
-  //     );
-  //   }
-  //   return (
-  //     <Camera
-  //       style={styles.camera}
-  //       type={Camera.Constants.Type.front}
-  //       ref={(ref) => setCameraRef(ref)}
-  //     />
-  //   );
-  // };
 
   const initialize = () => {
     function onConnect() {
@@ -157,7 +116,7 @@ const App = () => {
         {/* <View style={styles.videoContainer}>{renderCamera()}</View> */}
         <View style={styles.liveStreamContainer}>
           <WebView
-            source={{ uri: "http://proxy60.rt3.io:30455/?action=stream" }}
+            source={{ uri: "http://proxy61.rt3.io:30498/?action=stream" }}
             style={{ flex: 1 }}
           />
         </View>
