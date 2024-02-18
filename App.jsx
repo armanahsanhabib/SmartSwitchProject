@@ -1,7 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import React, { useEffect, useState } from "react";
 import { ScrollView, StatusBar, StyleSheet, Text, View } from "react-native";
-import Toast from "react-native-toast";
+import Toast from "react-native-simple-toast";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { WebView } from "react-native-webview";
 import init from "react_native_mqtt";

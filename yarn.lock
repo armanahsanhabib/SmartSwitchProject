@@ -5196,15 +5196,15 @@ react-is@^18.0.0:
   resolved "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
+react-native-simple-toast@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-simple-toast/-/react-native-simple-toast-3.2.0.tgz#61ade1a87ffdc506855b7ecaa5a716f09b5e0e7d"
+  integrity sha512-aiv162Zr4fRAy1RY6fjrl3zZV1DVQJhvKAoS7d+Vylm7SgYEnt/MKrQcXDT21SVmunONvKx7KpDylzfSpgnDPw==
+
 react-native-storage@^0.1.2:
   version "0.1.5"
   resolved "https://registry.npmjs.org/react-native-storage/-/react-native-storage-0.1.5.tgz"
   integrity sha512-k8Kbbss8IgbUUWlht8sEIPiowMsv8mY+QbBG23Pjk38+g8NwxyYxMJtIyYj9SpP2xaMZLQ67JFAEbTHsstZ8gg==
-
-react-native-toast@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-toast/-/react-native-toast-1.0.1.tgz#9fd21cb4bf7f71e226969aeba7cf8afee9618052"
-  integrity sha512-ehpE72WexAbLA4RWc/jtosCrpu/soCdS/oHBpzaLnaeNWl7tIxH8Vt7cp2PONP9Lgw/fZBoq87+OKSB4ecCezg==
 
 react-native-web@~0.19.6:
   version "0.19.10"
@@ -5231,7 +5231,7 @@ react-native-webrtc@^118.0.1:
 
 react-native-webview@^13.8.1:
   version "13.8.1"
-  resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-13.8.1.tgz#d0058c063e38241476049aaab2e5cc9f254d5480"
+  resolved "https://registry.npmjs.org/react-native-webview/-/react-native-webview-13.8.1.tgz"
   integrity sha512-7Jqm1WzWJrOWraBAXQfKtr/Uo5Jw/IJHzC40jYLwgV/eVGmLJ9BpGKw6QVw7wpRkjmTZ2Typ4B1aHJLJJQFslA==
   dependencies:
     escape-string-regexp "2.0.0"
