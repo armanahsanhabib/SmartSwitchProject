@@ -8,7 +8,7 @@ const SwitchButton = ({ load, state, onPress }) => {
       <Pressable
         style={[
           styles.switchStyle,
-          { backgroundColor: state ? "#10b981" : "#fff" },
+          { backgroundColor: state ? "#059669" : "#ffe4e6" },
           { borderColor: state ? "#059669" : "#e11d48" },
           { borderWidth: state ? 2 : 1 },
         ]}

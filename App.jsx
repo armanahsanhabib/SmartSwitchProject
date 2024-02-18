@@ -107,16 +107,23 @@ const App = () => {
       <View style={styles.main}>
         <View
           style={[
-            styles.headingRow,
-            { backgroundColor: "#0284c7", marginTop: 8 },
+            styles.headingLive,
+            {
+              marginTop: 5,
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "ce",
+            },
           ]}
         >
           <MaterialCommunityIcons
             name="circle-slice-8"
-            color="#fff"
+            color="#f00"
             size={18}
           />
-          <Text style={styles.headingText}>Live video streaming</Text>
+          <Text style={[styles.headingText, { color: "#333" }]}>
+            Live video streaming
+          </Text>
         </View>
         {/* <View style={styles.videoContainer}>{renderCamera()}</View> */}
         <View style={styles.liveStreamContainer}>
@@ -128,15 +135,20 @@ const App = () => {
         <View
           style={[
             styles.headingRow,
-            { backgroundColor: "#ea580c", marginBottom: 5 },
+            {
+              backgroundColor: "#bfdbfe",
+              marginVertical: 5,
+              borderWidth: 2,
+              borderColor: "#3b82f6",
+            },
           ]}
         >
           <MaterialCommunityIcons
             name="chevron-triple-right"
-            color="#fff"
+            color="#000"
             size={24}
           />
-          <Text style={styles.headingText}>Switches</Text>
+          <Text style={[styles.headingText, { color: "#000" }]}>Switches</Text>
         </View>
         {/* Display SwitchButtons based on apiData */}
         <ScrollView
@@ -187,7 +199,7 @@ const App = () => {
 const styles = StyleSheet.create({
   appContainer: {
     flex: 1,
-    backgroundColor: "#f5f3ff",
+    backgroundColor: "#ffedd5",
   },
   main: {
     flex: 1,
@@ -198,7 +210,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingVertical: 5,
     paddingHorizontal: 10,
-    borderRadius: 5,
+    borderRadius: 10,
     // marginTop: 6,
   },
   headingText: {
@@ -225,12 +237,13 @@ const styles = StyleSheet.create({
   },
   liveStreamContainer: {
     // flex: 1,
-    height: 269,
+    height: 250,
     backgroundColor: "#fff",
-    // borderRadius: 10,
-    // borderWidth: 2,
+    borderRadius: 10,
+    borderWidth: 2,
     borderColor: "#0284c7",
-    // overflow: "hidden",
+    overflow: "hidden",
+    marginVertical: 5,
   },
   videoContainerText: {
     fontSize: 24,
