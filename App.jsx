@@ -95,7 +95,7 @@ const App = () => {
 
   return (
     <View style={styles.appContainer}>
-      {/* <View style={styles.header}>
+      <View style={styles.header}>
         <MaterialCommunityIcons
           name="nintendo-switch"
           style={styles.liveIcon}
@@ -103,9 +103,14 @@ const App = () => {
           size={24}
         />
         <Text style={styles.headerText}>Smart Switch App</Text>
-      </View> */}
+      </View>
       <View style={styles.main}>
-        <View style={[styles.headingRow, { backgroundColor: "#0284c7" }]}>
+        <View
+          style={[
+            styles.headingRow,
+            { backgroundColor: "#0284c7", marginTop: 8 },
+          ]}
+        >
           <MaterialCommunityIcons
             name="circle-slice-8"
             color="#fff"
@@ -116,11 +121,16 @@ const App = () => {
         {/* <View style={styles.videoContainer}>{renderCamera()}</View> */}
         <View style={styles.liveStreamContainer}>
           <WebView
-            source={{ uri: "http://proxy61.rt3.io:30498/?action=stream" }}
+            source={{ uri: "http://proxy61.rt3.io:30498/" }}
             style={{ flex: 1 }}
           />
         </View>
-        <View style={[styles.headingRow, { backgroundColor: "#ea580c" }]}>
+        <View
+          style={[
+            styles.headingRow,
+            { backgroundColor: "#ea580c", marginBottom: 5 },
+          ]}
+        >
           <MaterialCommunityIcons
             name="chevron-triple-right"
             color="#fff"
@@ -189,7 +199,7 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     paddingHorizontal: 10,
     borderRadius: 5,
-    marginVertical: 6,
+    // marginTop: 6,
   },
   headingText: {
     marginLeft: 8,
@@ -215,12 +225,12 @@ const styles = StyleSheet.create({
   },
   liveStreamContainer: {
     // flex: 1,
-    height: 215,
+    height: 269,
     backgroundColor: "#fff",
-    borderRadius: 10,
-    borderWidth: 2,
+    // borderRadius: 10,
+    // borderWidth: 2,
     borderColor: "#0284c7",
-    overflow: "hidden",
+    // overflow: "hidden",
   },
   videoContainerText: {
     fontSize: 24,
