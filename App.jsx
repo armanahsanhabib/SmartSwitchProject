@@ -95,7 +95,7 @@ const App = () => {
 
   return (
     <View style={styles.appContainer}>
-      <View style={styles.header}>
+      {/* <View style={styles.header}>
         <MaterialCommunityIcons
           name="nintendo-switch"
           style={styles.liveIcon}
@@ -103,7 +103,7 @@ const App = () => {
           size={24}
         />
         <Text style={styles.headerText}>Smart Switch App</Text>
-      </View>
+      </View> */}
       <View style={styles.main}>
         <View style={[styles.headingRow, { backgroundColor: "#0284c7" }]}>
           <MaterialCommunityIcons
